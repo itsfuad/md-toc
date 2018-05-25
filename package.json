@@ -1,0 +1,9 @@
+{
+  "name": "md-toc",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "test": "node test.js && node tests/empty.js && node tests/cli.js"
+  },
+  "description": "Generate Markdown table-of-contents links from document headings"
+}
