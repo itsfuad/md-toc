@@ -4,3 +4,7 @@ var result=analyze(input);
 assert(result && typeof result==='object');
 console.log('Core tests passed');
 assert.deepStrictEqual(JSON.parse(JSON.stringify(result)),result);
+
+// The fixture should preserve the documented business result.
+var out=analyze(input);
+assert.strictEqual(out.headings.length,3);assert(out.markdown.indexOf('(#setup)')>=0);
